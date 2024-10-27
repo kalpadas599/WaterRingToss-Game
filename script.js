@@ -35,6 +35,9 @@ for (let i = 0; i < ringCount; i++) {
     });
 }
 
+// Ensure the initial score is displayed as zero
+scoreDisplay.textContent = `Score: ${score}`;
+
 function drawRing(ring) {
     ctx.drawImage(ringImage, ring.x - ring.radius, ring.y - ring.radius, ring.radius * 2, ring.radius * 2);
 }
@@ -118,10 +121,12 @@ function draw() {
     for (let ring of rings) {
         drawRing(ring);
     }
+
+    // Update score display here
     scoreDisplay.textContent = `Score: ${score}`;
-    
+
     // Check for game over condition
-    if (score < -1000) {
+    if (score < -10000) { // Updated to check for -10000
         gameOver(false); // Pass false to indicate a loss
     }
 }
