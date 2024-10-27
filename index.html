@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Ring Toss Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls">
+            <button id="moveButton">Move Rings</button>
+            <button id="stopButton">Stop</button>
+            <div class="score">
+                <p><span id="score">0</span></p>
+                <p><span id="highScore">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="instructions-box">
+        <h1 class="game-title">WATER RING TOSS GAME</h1>
+        <div class="instructions">
+            <p>Instructions:</p>
+            <ul>
+                <li>1. Click the "Move Rings" button to start the movement of the rings.</li>
+                <li>2. Click the "Stop" button to stop the movement of the rings.</li>
+                <li>3. Try to get the rings into the target by using the buttons.</li>
+                <li>4. Each ring that lands in the target earns you <strong>100 points</strong>.</li>
+                <li>5. If a ring hits the canvas walls, you lose <strong>50 points</strong>.</li>
+                <li>6. If your score drops below <strong>-1000</strong>, the game is over. You'll see a message indicating you lost.</li>
+                <li>7. If you collect all the rings, the game will stop automatically, and your score will be displayed.</li>
+                <li>8. Your high score will be saved and displayed.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
