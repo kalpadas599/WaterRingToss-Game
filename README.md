@@ -37,6 +37,10 @@ To run the game locally, follow these steps:
    ```bash
    cd water-ring-toss
 
+Here is the preview of the game:
+![Screenshot 2024-10-27 181111](https://github.com/user-attachments/assets/de1c809e-f37c-4039-980a-5ffa375344b1)
+
+
 Feel free to modify any sections to better match your project specifics or personal preferences!
 
 
